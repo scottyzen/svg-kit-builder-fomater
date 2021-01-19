@@ -1,0 +1,19 @@
+{
+  "name": "svgfixer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Kennedy (scottyzen)",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "grunt": "^1.3.0"
+  },
+  "devDependencies": {
+    "grunt-text-replace": "^0.4.0",
+    "load-grunt-tasks": "^5.1.0"
+  }
+}
