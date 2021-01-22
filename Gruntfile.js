@@ -7,24 +7,19 @@ module.exports = function(grunt) {
     grunt.initConfig({
         replace: {
             conganSportsSvg: {
-              src: ['../orignals/*.svg'],
+              src: ['orignals/*.svg'],
               overwrite: false,
               replacements: [{
                 from: /data-name\=\"\$(.*?)\$"/gi,
                 to: function (matchedWord, index, fullText, regexMatches) {
-                  
-                  let word = regexMatches[0].toLowerCase();
-
-                  names.push(word)
-
-
-
+                  const word = regexMatches[0].toLowerCase();
                   const outputWithStyleVariable = `data-name="${word}" style="fill: var(--${word})"`;
-                  console.log(outputWithStyleVariable)
+                  names.push(word)
+                  // console.log(outputWithStyleVariable)
                   return outputWithStyleVariable;
                 }
               }],
-              dest: '../new/'
+              dest: 'new/'
             }
           },
           printClassNames: {}
