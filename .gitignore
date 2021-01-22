@@ -105,3 +105,6 @@ dist
 
 *.zip
 .DS_Store
+
+orignals/
+new/
