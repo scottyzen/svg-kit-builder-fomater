@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         replace: {
             conganSportsSvg: {
-              src: ['orignals/*.svg'],
+              src: ['../orignals/*.svg'],
               overwrite: false,
               replacements: [{
                 from: /data-name\=\"\$(.*?)\$"/gi,
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
                   return outputWithStyleVariable;
                 }
               }],
-              dest: 'new/'
+              dest: '../new/'
             }
           },
           printClassNames: {}
